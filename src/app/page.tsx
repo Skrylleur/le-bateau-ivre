@@ -77,32 +77,32 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🍺</span>
+                <span className="text-2xl">🍝</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Bières Artisanales</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Cuisine Méditerranéenne</h3>
               <p className="text-gray-600">
-                Découvrez notre sélection de bières locales et internationales, 
-                parfaitement servies pour accompagner vos repas.
+                Découvrez nos spécialités italiennes et méditerranéennes : 
+                gnocchi, penne, risotto et plats traditionnels préparés avec passion.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🐟</span>
+                <span className="text-2xl">🦐</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Fruits de Mer</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Fruits de Mer Frais</h3>
               <p className="text-gray-600">
-                Nos plats de fruits de mer frais, pêchés localement et préparés 
-                selon les traditions provençales.
+                Loup entier, saumon fumé, gambas et supions en persillade. 
+                Nos fruits de mer sont sélectionnés avec soin pour leur fraîcheur.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🍷</span>
+                <span className="text-2xl">👨‍🍳</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4">Vins de Provence</h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Service Attentionné</h3>
               <p className="text-gray-600">
-                Une carte de vins soigneusement sélectionnée, mettant à l'honneur 
-                les meilleurs domaines de la région.
+                Une équipe professionnelle et chaleureuse vous accueille dans un cadre 
+                convivial pour une expérience gastronomique mémorable.
               </p>
             </div>
           </div>
