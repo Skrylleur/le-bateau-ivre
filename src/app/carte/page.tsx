@@ -44,7 +44,7 @@ export default function Carte() {
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <Link href="/" className="text-2xl font-bold text-gray-800 font-serif hover:text-amber-600 transition-colors">
-              ← Retour à l'accueil
+              ← Retour à l&apos;accueil
             </Link>
             <h1 className="text-3xl font-bold text-center text-gray-800 font-serif">
               LE BATEAU IVRE
@@ -215,7 +215,7 @@ export default function Carte() {
                   </div>
                   <div className="flex justify-between items-start">
                     <div>
-                      <h4 className="font-semibold text-gray-800">Noix d'entrecôte sauce champignon</h4>
+                      <h4 className="font-semibold text-gray-800">Noix d&apos;entrecôte sauce champignon</h4>
                       <p className="text-sm text-gray-600">250/300g</p>
                     </div>
                     <span className="font-bold text-amber-600 ml-4">29,00€</span>
@@ -281,7 +281,7 @@ export default function Carte() {
                   </div>
                   <div className="flex justify-between items-start">
                     <div>
-                      <h4 className="font-semibold text-gray-800">Mousse au chocolat, Chantilly Banane Bailey's</h4>
+                      <h4 className="font-semibold text-gray-800">Mousse au chocolat, Chantilly Banane Bailey&apos;s</h4>
                     </div>
                     <span className="font-bold text-amber-600 ml-4">11,50€</span>
                   </div>

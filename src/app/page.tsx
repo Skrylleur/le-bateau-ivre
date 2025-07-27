@@ -161,7 +161,7 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Horaires d'ouverture</h3>
+                              <h3 className="text-xl font-bold mb-4">Horaires d&apos;ouverture</h3>
               <p className="mb-2">Dimanche - Samedi</p>
               <p className="mb-2">08h00 - 22h30</p>
               <p className="text-sm text-gray-300">Ouvert 7j/7</p>
