@@ -1,103 +1,261 @@
 import Image from "next/image";
+import Link from "next/link";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-100">
+      {/* Header */}
+      <header className="relative h-screen flex items-center justify-center overflow-hidden" role="banner">
+        {/* Background Image */}
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/2024-11-20.jpg"
+          alt="Vue sur la mer depuis la brasserie"
+          fill
+          className="object-cover"
           priority
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        {/* Hero Content */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 font-serif">
+            Le Bateau Ivre
+          </h1>
+          <p className="sr-only">Brasserie et restaurant au port de Cavalaire sur Mer</p>
+          <p className="text-xl md:text-2xl mb-8 font-light">
+            Brasserie & Restaurant à Cavalaire sur Mer
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold transition-colors">
+              Réserver une table
+            </a>
+            <Link href="/carte" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-colors">
+              Voir la carte
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      {/* About Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-800 mb-6 font-serif">
+                Une expérience unique au bord de la Méditerranée
+              </h2>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Découvrez notre brasserie située dans le magnifique port de Cavalaire sur Mer. 
+                Nous vous proposons une cuisine traditionnelle française avec une touche méditerranéenne, 
+                le tout dans un cadre idyllique face à la mer.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Nos plats sont préparés avec des produits frais et locaux, et notre sélection de bières 
+                artisanales vous fera voyager à travers les saveurs du monde.
+              </p>
+            </div>
+            <div className="relative">
+              <Image
+                src="/2024-11-20-2.jpg"
+                alt="Terrasse de la brasserie"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Specialties Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 font-serif">
+            Nos Spécialités
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🍺</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Bières Artisanales</h3>
+              <p className="text-gray-600">
+                Découvrez notre sélection de bières locales et internationales, 
+                parfaitement servies pour accompagner vos repas.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🐟</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Fruits de Mer</h3>
+              <p className="text-gray-600">
+                Nos plats de fruits de mer frais, pêchés localement et préparés 
+                selon les traditions provençales.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🍷</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Vins de Provence</h3>
+              <p className="text-gray-600">
+                Une carte de vins soigneusement sélectionnée, mettant à l'honneur 
+                les meilleurs domaines de la région.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 font-serif">
+            Notre Ambiance
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative">
+              <Image
+                src="/2024-11-20-3.jpg"
+                alt="Intérieur de la brasserie"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-xl"
+              />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Un cadre chaleureux et authentique
+              </h3>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Notre brasserie vous accueille dans un décor maritime élégant, 
+                où vous pourrez profiter de la vue imprenable sur le port de Cavalaire 
+                tout en dégustant nos délicieuses spécialités.
+              </p>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-center">
+                  <span className="text-amber-600 mr-2">✓</span>
+                  Terrasse ensoleillée face à la mer
+                </li>
+                <li className="flex items-center">
+                  <span className="text-amber-600 mr-2">✓</span>
+                  Ambiance conviviale et familiale
+                </li>
+                <li className="flex items-center">
+                  <span className="text-amber-600 mr-2">✓</span>
+                  Service attentionné et professionnel
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 bg-gradient-to-r from-blue-900 to-cyan-800 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-8 font-serif">
+            Venez nous rendre visite
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4">Horaires d'ouverture</h3>
+              <p className="mb-2">Dimanche - Samedi</p>
+              <p className="mb-2">08h00 - 22h30</p>
+              <p className="text-sm text-gray-300">Ouvert 7j/7</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4">Contact</h3>
+              <p className="mb-2">42 Nouveau port</p>
+              <p className="mb-2">83240 Cavalaire-sur-Mer</p>
+              <p className="mb-2">Tél: 07 63 85 98 70</p>
+              <p className="mb-4">Email: contact@lebateauivre.fr</p>
+            </div>
+          </div>
+          
+          {/* Réseaux sociaux centrés */}
+          {/* <div className="mt-12 text-center">
+            <h4 className="text-xl font-semibold mb-6">Suivez-nous</h4>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="https://www.facebook.com/people/Le-Bateau-Ivre-Cavalaire/61567947616719/?_rdr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                aria-label="Page Facebook"
+              >
+                <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span className="font-medium">Facebook</span>
+              </a>
+              <a 
+                href="https://www.instagram.com/lebateauivrecavalaire/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg transition-colors"
+                aria-label="Page Instagram"
+              >
+                <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span className="font-medium">Instagram</span>
+              </a>
+            </div>
+          </div> */}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-lg font-serif mb-4">Le Bateau Ivre</p>
+          
+          {/* Navigation dans le footer */}
+          <div className="flex justify-center gap-6 mb-4">
+            <Link 
+              href="/carte" 
+              className="text-gray-300 hover:text-white hover:underline transition-colors font-medium"
+            >
+              Voir la carte
+            </Link>
+          </div>
+          
+          {/* Réseaux sociaux dans le footer */}
+          <div className="flex justify-center gap-6 mb-4">
+            <a 
+              href="https://www.facebook.com/people/Le-Bateau-Ivre-Cavalaire/61567947616719/?_rdr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg transition-colors"
+              aria-label="Page Facebook"
+            >
+              <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span className="text-sm font-medium">Facebook</span>
+            </a>
+            <a 
+              href="https://www.instagram.com/lebateauivrecavalaire/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-3 py-2 rounded-lg transition-colors"
+              aria-label="Page Instagram"
+            >
+              <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span className="text-sm font-medium">Instagram</span>
+            </a>
+          </div>
+          
+          <p className="text-gray-400">© 2025 - Site créé par <Link className="transition-colors hover:underline" href="https://gourinchas.com" target="_blank" rel="noopener noreferrer"> Antonin Gourinchas</Link> - Tous droits réservés</p>
+        </div>
       </footer>
+
+      <ScrollToTop />
     </div>
   );
 }
