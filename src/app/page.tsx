@@ -171,7 +171,7 @@ export default function Home() {
               <p className="mb-2">42 Nouveau port</p>
               <p className="mb-2">83240 Cavalaire-sur-Mer</p>
               <p className="mb-2">Tél: 07 63 85 98 70</p>
-              <p className="mb-4">Email: contact@lebateauivre.fr</p>
+              {/* <p className="mb-4">Email: contact@lebateauivre.fr</p> */}
             </div>
           </div>
           
