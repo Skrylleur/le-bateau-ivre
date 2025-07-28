@@ -251,7 +251,11 @@ export default function Home() {
             </a>
           </div>
           
-          <p className="text-gray-400">© 2025 - Site créé par <Link className="transition-colors hover:underline" href="https://gourinchas.com" target="_blank" rel="noopener noreferrer"> Antonin Gourinchas</Link> - Tous droits réservés</p>
+          <p className="text-gray-400 mb-2">© 2025 - Site créé par <Link className="transition-colors hover:underline" href="https://gourinchas.com" target="_blank" rel="noopener noreferrer"> Antonin Gourinchas</Link> - Tous droits réservés</p>
+          <div className="flex justify-center gap-4 text-xs text-gray-500">
+            <Link href="/mentions-legales" className="hover:text-amber-400 transition-colors">Mentions légales</Link>
+            <Link href="/politique-confidentialite" className="hover:text-amber-400 transition-colors">Politique de confidentialité</Link>
+          </div>
         </div>
       </footer>
 
