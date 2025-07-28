@@ -156,6 +156,7 @@ body {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease-out;
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll.animated {
@@ -210,4 +211,26 @@ body {
 
 .animate-on-scroll[data-delay="600"] {
   transition-delay: 0.6s;
+}
+
+/* Réinitialisation des animations pour les navigations */
+.animate-on-scroll:not(.animated) {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.animate-on-scroll:not(.animated)[data-animation="slide-right"] {
+  transform: translateX(-50px);
+}
+
+.animate-on-scroll:not(.animated)[data-animation="slide-left"] {
+  transform: translateX(50px);
+}
+
+.animate-on-scroll:not(.animated)[data-animation="slide-up"] {
+  transform: translateY(50px);
+}
+
+.animate-on-scroll:not(.animated)[data-animation="fade-in"] {
+  transform: none;
 }
