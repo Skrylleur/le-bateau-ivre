@@ -234,3 +234,14 @@ body {
 .animate-on-scroll:not(.animated)[data-animation="fade-in"] {
   transform: none;
 }
+
+/* Correction pour les images - s'assurer qu'elles sont visibles */
+.animate-on-scroll img {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.animate-on-scroll.animated img {
+  opacity: 1 !important;
+  transform: none !important;
+}

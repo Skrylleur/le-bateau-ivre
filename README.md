@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ Le Bateau Ivre - Site Web Restaurant
 
-## Getting Started
+Site web professionnel pour la brasserie "Le Bateau Ivre" située au port de Cavalaire sur Mer.
 
-First, run the development server:
+## ✨ Fonctionnalités
 
+### 🎨 Design & UX
+- **Design moderne** avec animations fluides
+- **Responsive design** parfait sur tous les appareils
+- **Animations au scroll** pour une expérience engageante
+- **Interface intuitive** et navigation claire
+
+### 📱 Performance & SEO
+- **Optimisé pour les moteurs de recherche** (SEO)
+- **Google Analytics 4** intégré
+- **Schema.org** pour les rich snippets
+- **Sitemap XML** et robots.txt
+- **PWA ready** (Progressive Web App)
+
+### 🛠️ Technologies
+- **Next.js 15** avec App Router
+- **TypeScript** pour la sécurité du code
+- **Tailwind CSS** pour le styling
+- **Animations CSS** personnalisées
+- **Google Analytics** intégré
+
+## 📋 Pages Incluses
+
+### 🏠 Page d'Accueil
+- Hero section avec image de fond
+- Présentation du restaurant
+- Spécialités culinaires
+- Galerie photos
+- Informations de contact
+
+### 📄 Page Carte
+- Menu complet du restaurant
+- Prix et descriptions
+- Design élégant et lisible
+
+### ⚖️ Pages Légales
+- **Mentions légales** complètes
+- **Politique de confidentialité** RGPD
+- Conformité légale française
+
+## 🚀 Installation & Déploiement
+
+### Prérequis
+- Node.js 18+ 
+- npm ou yarn
+
+### Installation
 ```bash
+# Cloner le projet
+git clone [URL_DU_REPO]
+
+# Installer les dépendances
+npm install
+
+# Lancer en développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Variables d'Environnement
+Créez un fichier `.env.local` :
+```env
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-RFYY36WQ87
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Déploiement
+```bash
+# Build de production
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Démarrer en production
+npm start
+```
 
-## Learn More
+## 📊 Analytics & Suivi
 
-To learn more about Next.js, take a look at the following resources:
+### Google Analytics 4
+- **ID de mesure** : `G-RFYY36WQ87`
+- **Suivi complet** : pages vues, événements, conversions
+- **Rapports temps réel** disponibles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Métriques Incluses
+- Visiteurs uniques
+- Pages les plus consultées
+- Sources de trafic
+- Comportement utilisateur
+- Conversions (clics téléphone, carte)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Optimisations SEO
 
-## Deploy on Vercel
+### Meta Tags
+- Titres optimisés pour chaque page
+- Descriptions uniques et engageantes
+- Mots-clés ciblés pour Cavalaire sur Mer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Open Graph
+- Images optimisées pour les réseaux sociaux
+- Titres et descriptions personnalisés
+- Support Twitter Cards
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Schema.org
+- Données structurées pour restaurant
+- Coordonnées géographiques
+- Horaires d'ouverture
+- Type de cuisine
+
+## 📱 PWA Features
+
+### Installation
+- **Manifest.json** configuré
+- **Service Worker** ready
+- **Installation** sur mobile possible
+- **Mode hors ligne** préparé
+
+### Icônes
+- Favicon personnalisé
+- Apple Touch Icon
+- Icônes multiples tailles
+
+## 🔧 Maintenance
+
+### Mises à Jour
+- **Next.js** : Mises à jour automatiques
+- **Dépendances** : Sécurité maintenue
+- **Contenu** : Facilement modifiable
+
+### Monitoring
+- **Performance** : Core Web Vitals optimisés
+- **Erreurs** : Logging automatique
+- **Analytics** : Suivi continu
+
+## 📞 Support
+
+### Contact Développeur
+- **Antonin Gourinchas**
+- **Site** : [gourinchas.com](https://gourinchas.com)
+- **Email** : contact@gourinchas.com
+
+### Documentation
+- **Code commenté** et documenté
+- **Structure claire** et maintenable
+- **README complet** inclus
+
+## 💰 Valeur Ajoutée
+
+### Pour le Restaurant
+- **Image professionnelle** renforcée
+- **Visibilité locale** améliorée
+- **Conversion clients** optimisée
+- **Gestion en ligne** simplifiée
+
+### Pour l'Acheteur
+- **Site prêt à l'emploi**
+- **Code propre** et maintenable
+- **Documentation complète**
+- **Support technique** inclus
+
+## 🎉 Prêt pour la Vente !
+
+Ce site web est **100% fonctionnel** et prêt pour la mise en production. Tous les éléments techniques, légaux et marketing sont en place pour un lancement réussi.
+
+---
+
+**Développé avec ❤️ par Antonin Gourinchas**

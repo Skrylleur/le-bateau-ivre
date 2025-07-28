@@ -1,0 +1,25 @@
+{
+  "name": "Le Bateau Ivre - Brasserie & Restaurant",
+  "short_name": "Le Bateau Ivre",
+  "description": "Brasserie et restaurant au port de Cavalaire sur Mer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f59e0b",
+  "theme_color": "#f59e0b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["food", "restaurant", "lifestyle"],
+  "lang": "fr",
+  "dir": "ltr"
+} 

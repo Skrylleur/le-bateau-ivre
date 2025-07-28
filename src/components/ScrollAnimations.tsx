@@ -32,7 +32,16 @@ export default function ScrollAnimations() {
       // Attendre un peu pour que le DOM soit mis à jour
       setTimeout(() => {
         const animatedElements = document.querySelectorAll('.animate-on-scroll');
-        animatedElements.forEach((el) => observer.observe(el));
+        animatedElements.forEach((el) => {
+          observer.observe(el);
+          
+          // S'assurer que les images sont visibles
+          const images = el.querySelectorAll('img');
+          images.forEach((img) => {
+            img.style.opacity = '1';
+            img.style.transform = 'none';
+          });
+        });
       }, 100);
     };
 
