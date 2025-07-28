@@ -18,15 +18,15 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30"></div>
         
         {/* Hero Content */}
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 font-serif">
+        <div className="relative z-10 text-center text-white px-4 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 font-serif animate-slide-up">
             Le Bateau Ivre
           </h1>
           <p className="sr-only">Brasserie et restaurant au port de Cavalaire sur Mer</p>
-          <p className="text-xl md:text-2xl mb-8 font-light">
+          <p className="text-xl md:text-2xl mb-8 font-light animate-slide-up-delay">
             Brasserie & Restaurant à Cavalaire sur Mer
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up-delay-2">
             <a href="#contact" className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-semibold transition-colors">
               Réserver une table
             </a>
@@ -41,7 +41,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-on-scroll" data-animation="slide-right">
               <h2 className="text-4xl font-bold text-gray-800 mb-6 font-serif">
                 Une expérience unique au bord de la Méditerranée
               </h2>
@@ -55,7 +55,7 @@ export default function Home() {
                 artisanales vous fera voyager à travers les saveurs du monde.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative animate-on-scroll" data-animation="slide-left">
               <Image
                 src="/2024-11-20-2.jpg"
                 alt="Terrasse de la brasserie"
@@ -71,11 +71,11 @@ export default function Home() {
       {/* Specialties Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 font-serif">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 font-serif animate-on-scroll" data-animation="fade-in">
             Nos Spécialités
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center animate-on-scroll" data-animation="slide-up" data-delay="0">
               <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🍝</span>
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
                 gnocchi, penne, risotto et plats traditionnels préparés avec passion.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center animate-on-scroll" data-animation="slide-up" data-delay="200">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🦐</span>
               </div>
@@ -95,7 +95,7 @@ export default function Home() {
                 Nos fruits de mer sont sélectionnés avec soin pour leur fraîcheur.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center animate-on-scroll" data-animation="slide-up" data-delay="400">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">👨‍🍳</span>
               </div>
@@ -112,11 +112,11 @@ export default function Home() {
       {/* Gallery Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 font-serif">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 font-serif animate-on-scroll" data-animation="fade-in">
             Notre Ambiance
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative">
+            <div className="relative animate-on-scroll" data-animation="slide-right">
               <Image
                 src="/2024-11-20-3.jpg"
                 alt="Intérieur de la brasserie"
@@ -125,7 +125,7 @@ export default function Home() {
                 className="rounded-lg shadow-xl"
               />
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center animate-on-scroll" data-animation="slide-left">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
                 Un cadre chaleureux et authentique
               </h3>
@@ -156,17 +156,17 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 bg-gradient-to-r from-blue-900 to-cyan-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 font-serif">
+          <h2 className="text-4xl font-bold mb-8 font-serif animate-on-scroll" data-animation="fade-in">
             Venez nous rendre visite
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-                              <h3 className="text-xl font-bold mb-4">Horaires d&apos;ouverture</h3>
+            <div className="animate-on-scroll" data-animation="slide-up" data-delay="0">
+              <h3 className="text-xl font-bold mb-4">Horaires d&apos;ouverture</h3>
               <p className="mb-2">Dimanche - Samedi</p>
               <p className="mb-2">08h00 - 22h30</p>
               <p className="text-sm text-gray-300">Ouvert 7j/7</p>
             </div>
-            <div>
+            <div className="animate-on-scroll" data-animation="slide-up" data-delay="200">
               <h3 className="text-xl font-bold mb-4">Contact</h3>
               <p className="mb-2">42 Nouveau port</p>
               <p className="mb-2">83240 Cavalaire-sur-Mer</p>

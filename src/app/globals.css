@@ -45,3 +45,169 @@ body {
     overscroll-behavior: none;
   }
 }
+
+/* Animations pour la page d'accueil */
+
+/* Animation d'entrée pour le hero */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpDelay {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpDelay2 {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animations d'entrée */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+.animate-slide-up-delay {
+  animation: slideUpDelay 1s ease-out 0.3s both;
+}
+
+.animate-slide-up-delay-2 {
+  animation: slideUpDelay2 1s ease-out 0.6s both;
+}
+
+/* Animations au scroll */
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Classes pour les animations au scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll[data-animation="slide-right"] {
+  transform: translateX(-50px);
+}
+
+.animate-on-scroll[data-animation="slide-right"].animated {
+  transform: translateX(0);
+}
+
+.animate-on-scroll[data-animation="slide-left"] {
+  transform: translateX(50px);
+}
+
+.animate-on-scroll[data-animation="slide-left"].animated {
+  transform: translateX(0);
+}
+
+.animate-on-scroll[data-animation="slide-up"] {
+  transform: translateY(50px);
+}
+
+.animate-on-scroll[data-animation="slide-up"].animated {
+  transform: translateY(0);
+}
+
+.animate-on-scroll[data-animation="fade-in"] {
+  transform: none;
+}
+
+.animate-on-scroll[data-animation="fade-in"].animated {
+  transform: none;
+}
+
+/* Délais pour les animations */
+.animate-on-scroll[data-delay="0"] {
+  transition-delay: 0s;
+}
+
+.animate-on-scroll[data-delay="200"] {
+  transition-delay: 0.2s;
+}
+
+.animate-on-scroll[data-delay="400"] {
+  transition-delay: 0.4s;
+}
+
+.animate-on-scroll[data-delay="600"] {
+  transition-delay: 0.6s;
+}
