@@ -2,6 +2,14 @@
 
 Site web professionnel pour la brasserie "Le Bateau Ivre" située au port de Cavalaire sur Mer.
 
+## 📸 Aperçu du Site
+
+### 🏠 Page d'Accueil
+![Page d'Accueil - Le Bateau Ivre](public/Site-Interface-Home.jpeg)
+
+### 📄 Page Carte
+![Page Carte - Le Bateau Ivre](public/Site-Interface-Carte.jpeg)
+
 ## ✨ Fonctionnalités
 
 ### 🎨 Design & UX
@@ -27,6 +35,9 @@ Site web professionnel pour la brasserie "Le Bateau Ivre" située au port de Cav
 ## 📋 Pages Incluses
 
 ### 🏠 Page d'Accueil
+![Page d'Accueil](public/Site-Interface-Home.jpeg)
+
+**Fonctionnalités :**
 - Hero section avec image de fond
 - Présentation du restaurant
 - Spécialités culinaires
@@ -34,6 +45,9 @@ Site web professionnel pour la brasserie "Le Bateau Ivre" située au port de Cav
 - Informations de contact
 
 ### 📄 Page Carte
+![Page Carte](public/Site-Interface-Carte.jpeg)
+
+**Fonctionnalités :**
 - Menu complet du restaurant
 - Prix et descriptions
 - Design élégant et lisible
